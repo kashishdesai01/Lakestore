@@ -1,0 +1,35 @@
+name: correctness
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    env:
+      ASAN_OPTIONS: halt_on_error=1
+      UBSAN_OPTIONS: halt_on_error=1:print_stacktrace=1
+      TSAN_OPTIONS: halt_on_error=1
+    strategy:
+      fail-fast: false
+      matrix:
+        sanitizer: ['', 'address,undefined', 'thread']
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y cmake ninja-build g++ python3 libcurl4-openssl-dev libssl-dev libxml2-dev
+      - run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DFETCHCONTENT_BASE_DIR="$PWD/.cache/deps" -DLAKESTORE_SANITIZER='${{ matrix.sanitizer }}'
+      - run: cmake --build build -j 2
+      - if: matrix.sanitizer != 'thread'
+        run: ctest --test-dir build --output-on-failure -E '^cloud$'
+      - if: matrix.sanitizer == 'thread'
+        run: ctest --test-dir build --output-on-failure -R 'Concurrent|Race|Compaction|PinnedReader|OneWinner|Streaming|cli_smoke'
+      - if: matrix.sanitizer == '' || matrix.sanitizer == 'address,undefined'
+        run: docker compose -p lakestore-test -f docker/compose.yml up -d --build
+      - if: matrix.sanitizer == '' || matrix.sanitizer == 'address,undefined'
+        run: ./scripts/emulator-tests.sh build
+      - if: always()
+        run: docker compose -p lakestore-test -f docker/compose.yml down
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.sanitizer || 'normal' }}
+          path: build/Testing/Temporary/
