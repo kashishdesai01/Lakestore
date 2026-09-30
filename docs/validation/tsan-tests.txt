@@ -1,0 +1,25 @@
+Test project /Users/kashishdesai/Projects/Lakestore /build-tsan
+      Start 19: Tables.ConcurrentAppendsExactlyOnce
+ 1/10 Test #19: Tables.ConcurrentAppendsExactlyOnce ........................   Passed    2.23 sec
+      Start 20: Tables.SameVersionRaceRebases
+ 2/10 Test #20: Tables.SameVersionRaceRebases ..............................   Passed    0.23 sec
+      Start 21: Tables.OverwriteAbortsOnConcurrentAppend
+ 3/10 Test #21: Tables.OverwriteAbortsOnConcurrentAppend ...................   Passed    0.20 sec
+      Start 22: Tables.RestoreAbortsOnConcurrentAppend
+ 4/10 Test #22: Tables.RestoreAbortsOnConcurrentAppend .....................   Passed    0.26 sec
+      Start 23: Tables.CompactionPreservesConcurrentAppend
+ 5/10 Test #23: Tables.CompactionPreservesConcurrentAppend .................   Passed    0.39 sec
+      Start 24: Tables.CompactionAbortsIfInputRemoved
+ 6/10 Test #24: Tables.CompactionAbortsIfInputRemoved ......................   Passed    0.27 sec
+      Start 25: Tables.PinnedReaderUnaffectedByOverwrite
+ 7/10 Test #25: Tables.PinnedReaderUnaffectedByOverwrite ...................   Passed    0.22 sec
+      Start 59: Backends/StoreConformance.OneWinnerUnderContention/false
+ 8/10 Test #59: Backends/StoreConformance.OneWinnerUnderContention/false ...   Passed    0.17 sec
+      Start 60: Backends/StoreConformance.OneWinnerUnderContention/true
+ 9/10 Test #60: Backends/StoreConformance.OneWinnerUnderContention/true ....   Passed    0.18 sec
+      Start 63: cli_smoke
+10/10 Test #63: cli_smoke ..................................................   Passed    5.40 sec
+
+100% tests passed out of 10
+
+Total Test time (real) =   9.56 sec

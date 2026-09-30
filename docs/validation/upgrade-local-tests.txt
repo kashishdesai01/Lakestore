@@ -1,0 +1,151 @@
+Test project /Users/kashishdesai/Projects/Lakestore /build
+      Start  1: LocalStore.IndependentInstancesAndPersistence
+ 1/73 Test  #1: LocalStore.IndependentInstancesAndPersistence ...................   Passed    0.03 sec
+      Start  2: LocalStore.RejectSymlinks
+ 2/73 Test  #2: LocalStore.RejectSymlinks .......................................   Passed    0.03 sec
+      Start  3: Retries.ReadsRetryButConditionalWritesSurfaceTimeout
+ 3/73 Test  #3: Retries.ReadsRetryButConditionalWritesSurfaceTimeout ............   Passed    0.03 sec
+      Start  4: Retries.BoundedAndFatalNotRetried
+ 4/73 Test  #4: Retries.BoundedAndFatalNotRetried ...............................   Passed    0.03 sec
+      Start  5: Format.RoundTripTypesNullsAndProjection
+ 5/73 Test  #5: Format.RoundTripTypesNullsAndProjection .........................   Passed    0.04 sec
+      Start  6: Format.EmptyFile
+ 6/73 Test  #6: Format.EmptyFile ................................................   Passed    0.03 sec
+      Start  7: Format.CRC32CKnownVector
+ 7/73 Test  #7: Format.CRC32CKnownVector ........................................   Passed    0.03 sec
+      Start  8: Format.CorruptedChunkAndFooterFail
+ 8/73 Test  #8: Format.CorruptedChunkAndFooterFail ..............................   Passed    0.03 sec
+      Start  9: Format.RejectInvalidSizesAndTruncation
+ 9/73 Test  #9: Format.RejectInvalidSizesAndTruncation ..........................   Passed    0.05 sec
+      Start 10: Format.RejectSchemaAndValueMismatch
+10/73 Test #10: Format.RejectSchemaAndValueMismatch .............................   Passed    0.03 sec
+      Start 11: Format.DuplicateStringProjectionPreservesValues
+11/73 Test #11: Format.DuplicateStringProjectionPreservesValues .................   Passed    0.03 sec
+      Start 12: Format.TableCRCMatchesBitwiseReferenceForRandomBinaryInputs
+12/73 Test #12: Format.TableCRCMatchesBitwiseReferenceForRandomBinaryInputs .....   Passed    0.36 sec
+      Start 13: Predicates.ParserAndStringEscapes
+13/73 Test #13: Predicates.ParserAndStringEscapes ...............................   Passed    0.03 sec
+      Start 14: Predicates.MissingAndMalformedStatsStayConservative
+14/73 Test #14: Predicates.MissingAndMalformedStatsStayConservative .............   Passed    0.04 sec
+      Start 15: Pruning.SeededRandomDataEqualsFullScan
+15/73 Test #15: Pruning.SeededRandomDataEqualsFullScan ..........................   Passed    8.41 sec
+      Start 16: Csv.QuotingNewlinesNullsAndHeaders
+16/73 Test #16: Csv.QuotingNewlinesNullsAndHeaders ..............................   Passed    0.03 sec
+      Start 17: Metadata.SignedIntegerParsingRejectsLossyConversions
+17/73 Test #17: Metadata.SignedIntegerParsingRejectsLossyConversions ............   Passed    0.03 sec
+      Start 18: Tables.HistoryRestoreAndCloneDivergence
+18/73 Test #18: Tables.HistoryRestoreAndCloneDivergence .........................   Passed    0.06 sec
+      Start 19: Tables.AsOfAndMonotonicTimestamp
+19/73 Test #19: Tables.AsOfAndMonotonicTimestamp ................................   Passed    0.04 sec
+      Start 20: Tables.ConcurrentAppendsExactlyOnce
+20/73 Test #20: Tables.ConcurrentAppendsExactlyOnce .............................   Passed    0.85 sec
+      Start 21: Tables.SameVersionRaceRebases
+21/73 Test #21: Tables.SameVersionRaceRebases ...................................   Passed    0.03 sec
+      Start 22: Tables.OverwriteAbortsOnConcurrentAppend
+22/73 Test #22: Tables.OverwriteAbortsOnConcurrentAppend ........................   Passed    0.03 sec
+      Start 23: Tables.RestoreAbortsOnConcurrentAppend
+23/73 Test #23: Tables.RestoreAbortsOnConcurrentAppend ..........................   Passed    0.06 sec
+      Start 24: Tables.CompactionPreservesConcurrentAppend
+24/73 Test #24: Tables.CompactionPreservesConcurrentAppend ......................   Passed    0.03 sec
+      Start 25: Tables.CompactionAbortsIfInputRemoved
+25/73 Test #25: Tables.CompactionAbortsIfInputRemoved ...........................   Passed    0.04 sec
+      Start 26: Tables.PinnedReaderUnaffectedByOverwrite
+26/73 Test #26: Tables.PinnedReaderUnaffectedByOverwrite ........................   Passed    0.04 sec
+      Start 27: Tables.TimeoutAfterCommitResolvesWithoutDuplicate
+27/73 Test #27: Tables.TimeoutAfterCommitResolvesWithoutDuplicate ...............   Passed    0.03 sec
+      Start 28: Tables.TimeoutBeforeCommitRetriesSameSlot
+28/73 Test #28: Tables.TimeoutBeforeCommitRetriesSameSlot .......................   Passed    0.03 sec
+      Start 29: Tables.TimeoutWithOtherWinnerRebases
+29/73 Test #29: Tables.TimeoutWithOtherWinnerRebases ............................   Passed    0.03 sec
+      Start 30: Tables.UnresolvedOutcomeIsExplicitAndBounded
+30/73 Test #30: Tables.UnresolvedOutcomeIsExplicitAndBounded ....................   Passed    0.35 sec
+      Start 31: Tables.FailedResolutionMayStillHaveCommitted
+31/73 Test #31: Tables.FailedResolutionMayStillHaveCommitted ....................   Passed    0.03 sec
+      Start 32: Tables.CheckpointHintsMissingStaleAndCorrupt
+32/73 Test #32: Tables.CheckpointHintsMissingStaleAndCorrupt ....................   Passed    0.17 sec
+      Start 33: Tables.MissingCommitFailsClosed
+33/73 Test #33: Tables.MissingCommitFailsClosed .................................   Passed    0.04 sec
+      Start 34: Tables.ExpirationIsDurableAndRejectsAllOldAccess
+34/73 Test #34: Tables.ExpirationIsDurableAndRejectsAllOldAccess ................   Passed    0.04 sec
+      Start 35: Tables.FilePruningAndProjection
+35/73 Test #35: Tables.FilePruningAndProjection .................................   Passed    0.03 sec
+      Start 36: Tables.RejectInvalidScanOptions
+36/73 Test #36: Tables.RejectInvalidScanOptions .................................   Passed    0.02 sec
+      Start 37: Tables.IncompleteCatalogRegistrationCanRecover
+37/73 Test #37: Tables.IncompleteCatalogRegistrationCanRecover ..................   Passed    0.03 sec
+      Start 38: Tables.GCRequiresOfflineAndDryRunDoesNotMutate
+38/73 Test #38: Tables.GCRequiresOfflineAndDryRunDoesNotMutate ..................   Passed    0.03 sec
+      Start 39: Tables.GCProtectsCloneAndDeletesAfterBothExpire
+39/73 Test #39: Tables.GCProtectsCloneAndDeletesAfterBothExpire .................   Passed    0.06 sec
+      Start 40: Tables.GCRechecksRootsBetweenOfflinePasses
+40/73 Test #40: Tables.GCRechecksRootsBetweenOfflinePasses ......................   Passed    0.04 sec
+      Start 41: Tables.OrphanUploadCollectedInTwoPasses
+41/73 Test #41: Tables.OrphanUploadCollectedInTwoPasses .........................   Passed    0.02 sec
+      Start 42: Tables.GracePreventsRecentCandidate
+42/73 Test #42: Tables.GracePreventsRecentCandidate .............................   Passed    0.02 sec
+      Start 43: Tables.GCFailsClosedOnMissingCatalogOrLiveFile
+43/73 Test #43: Tables.GCFailsClosedOnMissingCatalogOrLiveFile ..................   Passed    0.02 sec
+      Start 44: Tables.HintReadFailureFallsBackToLog
+44/73 Test #44: Tables.HintReadFailureFallsBackToLog ............................   Passed    0.03 sec
+      Start 45: Tables.GCRechecksNewlyPublishedReference
+45/73 Test #45: Tables.GCRechecksNewlyPublishedReference ........................   Passed    0.07 sec
+      Start 46: Tables.FractionalStoredTimestampFailsClosed
+46/73 Test #46: Tables.FractionalStoredTimestampFailsClosed .....................   Passed    0.02 sec
+      Start 47: Tables.VerifyDetectsIncorrectPruningStatistics
+47/73 Test #47: Tables.VerifyDetectsIncorrectPruningStatistics ..................   Passed    0.04 sec
+      Start 48: CrashRecovery.DeathBeforeCommitLeavesOnlyOrphan
+48/73 Test #48: CrashRecovery.DeathBeforeCommitLeavesOnlyOrphan .................   Passed    0.07 sec
+      Start 49: CrashRecovery.DeathAfterCommitLeavesCompleteSnapshot
+49/73 Test #49: CrashRecovery.DeathAfterCommitLeavesCompleteSnapshot ............   Passed    0.06 sec
+      Start 50: PredicateAPI.NonFiniteDoubleLiteralRejected
+50/73 Test #50: PredicateAPI.NonFiniteDoubleLiteralRejected .....................   Passed    0.04 sec
+      Start 51: Model.RandomOperationsPreserveRetainedRowsAndSharedFiles
+51/73 Test #51: Model.RandomOperationsPreserveRetainedRowsAndSharedFiles ........   Passed   34.31 sec
+      Start 52: Streaming.EqualsMaterializedWithPruningAndDuplicateProjection
+52/73 Test #52: Streaming.EqualsMaterializedWithPruningAndDuplicateProjection ...   Passed    0.24 sec
+      Start 53: Streaming.EarlyConsumerTerminationStopsAfterOneBatchAndJoins
+53/73 Test #53: Streaming.EarlyConsumerTerminationStopsAfterOneBatchAndJoins ....   Passed    0.12 sec
+      Start 54: Streaming.ConsumerExceptionPropagatesAndJoinsBlockedWorkers
+54/73 Test #54: Streaming.ConsumerExceptionPropagatesAndJoinsBlockedWorkers .....   Passed    0.24 sec
+      Start 55: Streaming.PreCancelledDoesNotFetchData
+55/73 Test #55: Streaming.PreCancelledDoesNotFetchData ..........................   Passed    0.10 sec
+      Start 56: Streaming.ExternalCancellationDuringSlowConsumer
+56/73 Test #56: Streaming.ExternalCancellationDuringSlowConsumer ................   Passed    0.09 sec
+      Start 57: Streaming.BackpressureSerializesConsumerCallbacks
+57/73 Test #57: Streaming.BackpressureSerializesConsumerCallbacks ...............   Passed    0.12 sec
+      Start 58: Streaming.TooSmallBudgetFailsInsteadOfDeadlocking
+58/73 Test #58: Streaming.TooSmallBudgetFailsInsteadOfDeadlocking ...............   Passed    0.09 sec
+      Start 59: Streaming.CorruptionStopsAllWorkersAndThrows
+59/73 Test #59: Streaming.CorruptionStopsAllWorkersAndThrows ....................   Passed    0.24 sec
+      Start 60: Streaming.SnapshotRemainsPinnedAcrossConsumerWrites
+60/73 Test #60: Streaming.SnapshotRemainsPinnedAcrossConsumerWrites .............   Passed    0.12 sec
+      Start 61: Backends/StoreConformance.MissingAndIdempotentDelete/false
+61/73 Test #61: Backends/StoreConformance.MissingAndIdempotentDelete/false ......   Passed    0.02 sec
+      Start 62: Backends/StoreConformance.MissingAndIdempotentDelete/true
+62/73 Test #62: Backends/StoreConformance.MissingAndIdempotentDelete/true .......   Passed    0.02 sec
+      Start 63: Backends/StoreConformance.ConditionalWrites/false
+63/73 Test #63: Backends/StoreConformance.ConditionalWrites/false ...............   Passed    0.02 sec
+      Start 64: Backends/StoreConformance.ConditionalWrites/true
+64/73 Test #64: Backends/StoreConformance.ConditionalWrites/true ................   Passed    0.03 sec
+      Start 65: Backends/StoreConformance.ExactRangesAndBinaryData/false
+65/73 Test #65: Backends/StoreConformance.ExactRangesAndBinaryData/false ........   Passed    0.02 sec
+      Start 66: Backends/StoreConformance.ExactRangesAndBinaryData/true
+66/73 Test #66: Backends/StoreConformance.ExactRangesAndBinaryData/true .........   Passed    0.02 sec
+      Start 67: Backends/StoreConformance.CompleteListings/false
+67/73 Test #67: Backends/StoreConformance.CompleteListings/false ................   Passed    0.03 sec
+      Start 68: Backends/StoreConformance.CompleteListings/true
+68/73 Test #68: Backends/StoreConformance.CompleteListings/true .................   Passed    1.48 sec
+      Start 69: Backends/StoreConformance.OneWinnerUnderContention/false
+69/73 Test #69: Backends/StoreConformance.OneWinnerUnderContention/false ........   Passed    0.02 sec
+      Start 70: Backends/StoreConformance.OneWinnerUnderContention/true
+70/73 Test #70: Backends/StoreConformance.OneWinnerUnderContention/true .........   Passed    0.04 sec
+      Start 71: Backends/StoreConformance.RejectTraversal/false
+71/73 Test #71: Backends/StoreConformance.RejectTraversal/false .................   Passed    0.05 sec
+      Start 72: Backends/StoreConformance.RejectTraversal/true
+72/73 Test #72: Backends/StoreConformance.RejectTraversal/true ..................   Passed    0.02 sec
+      Start 73: cli_smoke
+73/73 Test #73: cli_smoke .......................................................   Passed    1.48 sec
+
+100% tests passed out of 73
+
+Total Test time (real) =  51.03 sec

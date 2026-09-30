@@ -1,0 +1,71 @@
+Test project /Users/kashishdesai/Projects/Lakestore /build-asan
+      Start  5: Format.RoundTripTypesNullsAndProjection
+ 1/33 Test  #5: Format.RoundTripTypesNullsAndProjection .........................   Passed    0.10 sec
+      Start  6: Format.EmptyFile
+ 2/33 Test  #6: Format.EmptyFile ................................................   Passed    0.08 sec
+      Start  7: Format.CRC32CKnownVector
+ 3/33 Test  #7: Format.CRC32CKnownVector ........................................   Passed    0.09 sec
+      Start  8: Format.CorruptedChunkAndFooterFail
+ 4/33 Test  #8: Format.CorruptedChunkAndFooterFail ..............................   Passed    0.09 sec
+      Start  9: Format.RejectInvalidSizesAndTruncation
+ 5/33 Test  #9: Format.RejectInvalidSizesAndTruncation ..........................   Passed    0.12 sec
+      Start 10: Format.RejectSchemaAndValueMismatch
+ 6/33 Test #10: Format.RejectSchemaAndValueMismatch .............................   Passed    0.08 sec
+      Start 11: Format.DuplicateStringProjectionPreservesValues
+ 7/33 Test #11: Format.DuplicateStringProjectionPreservesValues .................   Passed    0.10 sec
+      Start 12: Format.TableCRCMatchesBitwiseReferenceForRandomBinaryInputs
+ 8/33 Test #12: Format.TableCRCMatchesBitwiseReferenceForRandomBinaryInputs .....   Passed    0.68 sec
+      Start 13: Format.ConcurrentPredicateParsing
+ 9/33 Test #13: Format.ConcurrentPredicateParsing ...............................   Passed    0.34 sec
+      Start 14: Predicates.ParserAndStringEscapes
+10/33 Test #14: Predicates.ParserAndStringEscapes ...............................   Passed    0.10 sec
+      Start 15: Predicates.MissingAndMalformedStatsStayConservative
+11/33 Test #15: Predicates.MissingAndMalformedStatsStayConservative .............   Passed    0.45 sec
+      Start 18: Metadata.SignedIntegerParsingRejectsLossyConversions
+12/33 Test #18: Metadata.SignedIntegerParsingRejectsLossyConversions ............   Passed    0.22 sec
+      Start 19: Metadata.ASCIIIdentifiersAndSafeDataPaths
+13/33 Test #19: Metadata.ASCIIIdentifiersAndSafeDataPaths .......................   Passed    0.16 sec
+      Start 22: Tables.ConcurrentAppendsExactlyOnce
+14/33 Test #22: Tables.ConcurrentAppendsExactlyOnce .............................   Passed    6.96 sec
+      Start 23: Tables.SameVersionRaceRebases
+15/33 Test #23: Tables.SameVersionRaceRebases ...................................   Passed    0.22 sec
+      Start 24: Tables.OverwriteAbortsOnConcurrentAppend
+16/33 Test #24: Tables.OverwriteAbortsOnConcurrentAppend ........................   Passed    0.23 sec
+      Start 25: Tables.RestoreAbortsOnConcurrentAppend
+17/33 Test #25: Tables.RestoreAbortsOnConcurrentAppend ..........................   Passed    0.22 sec
+      Start 26: Tables.CompactionPreservesConcurrentAppend
+18/33 Test #26: Tables.CompactionPreservesConcurrentAppend ......................   Passed    0.24 sec
+      Start 27: Tables.CompactionAbortsIfInputRemoved
+19/33 Test #27: Tables.CompactionAbortsIfInputRemoved ...........................   Passed    0.15 sec
+      Start 28: Tables.PinnedReaderUnaffectedByOverwrite
+20/33 Test #28: Tables.PinnedReaderUnaffectedByOverwrite ........................   Passed    0.15 sec
+      Start 52: PredicateAPI.NonFiniteDoubleLiteralRejected
+21/33 Test #52: PredicateAPI.NonFiniteDoubleLiteralRejected .....................   Passed    0.13 sec
+      Start 54: Streaming.EqualsMaterializedWithPruningAndDuplicateProjection
+22/33 Test #54: Streaming.EqualsMaterializedWithPruningAndDuplicateProjection ...   Passed    1.55 sec
+      Start 55: Streaming.EarlyConsumerTerminationStopsAfterOneBatchAndJoins
+23/33 Test #55: Streaming.EarlyConsumerTerminationStopsAfterOneBatchAndJoins ....   Passed    0.58 sec
+      Start 56: Streaming.ConsumerExceptionPropagatesAndJoinsBlockedWorkers
+24/33 Test #56: Streaming.ConsumerExceptionPropagatesAndJoinsBlockedWorkers .....   Passed    0.58 sec
+      Start 57: Streaming.PreCancelledDoesNotFetchData
+25/33 Test #57: Streaming.PreCancelledDoesNotFetchData ..........................   Passed    0.38 sec
+      Start 58: Streaming.ExternalCancellationDuringSlowConsumer
+26/33 Test #58: Streaming.ExternalCancellationDuringSlowConsumer ................   Passed    0.38 sec
+      Start 59: Streaming.BackpressureSerializesConsumerCallbacks
+27/33 Test #59: Streaming.BackpressureSerializesConsumerCallbacks ...............   Passed    0.42 sec
+      Start 60: Streaming.TooSmallBudgetFailsInsteadOfDeadlocking
+28/33 Test #60: Streaming.TooSmallBudgetFailsInsteadOfDeadlocking ...............   Passed    0.44 sec
+      Start 61: Streaming.CorruptionStopsAllWorkersAndThrows
+29/33 Test #61: Streaming.CorruptionStopsAllWorkersAndThrows ....................   Passed    0.47 sec
+      Start 62: Streaming.SnapshotRemainsPinnedAcrossConsumerWrites
+30/33 Test #62: Streaming.SnapshotRemainsPinnedAcrossConsumerWrites .............   Passed    0.53 sec
+      Start 71: Backends/StoreConformance.OneWinnerUnderContention/false
+31/33 Test #71: Backends/StoreConformance.OneWinnerUnderContention/false ........   Passed    0.14 sec
+      Start 72: Backends/StoreConformance.OneWinnerUnderContention/true
+32/33 Test #72: Backends/StoreConformance.OneWinnerUnderContention/true .........   Passed    0.21 sec
+      Start 76: cli_smoke
+33/33 Test #76: cli_smoke .......................................................   Passed    5.32 sec
+
+100% tests passed out of 33
+
+Total Test time (real) =  22.22 sec

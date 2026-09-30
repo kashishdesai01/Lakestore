@@ -1,0 +1,24 @@
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from Emulators/CloudConformance
+[ RUN      ] Emulators/CloudConformance.ConditionalWritesRangeAndDelete/0
+[       OK ] Emulators/CloudConformance.ConditionalWritesRangeAndDelete/0 (157 ms)
+[ RUN      ] Emulators/CloudConformance.ConditionalWritesRangeAndDelete/1
+[       OK ] Emulators/CloudConformance.ConditionalWritesRangeAndDelete/1 (489 ms)
+[ RUN      ] Emulators/CloudConformance.PaginationBeyondOneThousand/0
+[       OK ] Emulators/CloudConformance.PaginationBeyondOneThousand/0 (6027 ms)
+[ RUN      ] Emulators/CloudConformance.PaginationBeyondOneThousand/1
+[       OK ] Emulators/CloudConformance.PaginationBeyondOneThousand/1 (17292 ms)
+[ RUN      ] Emulators/CloudConformance.ConcurrentWritersAndTimeoutResolution/0
+[       OK ] Emulators/CloudConformance.ConcurrentWritersAndTimeoutResolution/0 (4043 ms)
+[ RUN      ] Emulators/CloudConformance.ConcurrentWritersAndTimeoutResolution/1
+[       OK ] Emulators/CloudConformance.ConcurrentWritersAndTimeoutResolution/1 (2524 ms)
+[ RUN      ] Emulators/CloudConformance.CloneRestoreExpireAndOfflineGC/0
+[       OK ] Emulators/CloudConformance.CloneRestoreExpireAndOfflineGC/0 (1849 ms)
+[ RUN      ] Emulators/CloudConformance.CloneRestoreExpireAndOfflineGC/1
+[       OK ] Emulators/CloudConformance.CloneRestoreExpireAndOfflineGC/1 (1971 ms)
+[----------] 8 tests from Emulators/CloudConformance (34362 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (34364 ms total)
+[  PASSED  ] 8 tests.

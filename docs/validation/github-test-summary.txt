@@ -1,0 +1,13 @@
+normal job
+2026-10-07T17:11:13.3374125Z 100% tests passed, 0 tests failed out of 75
+2026-10-07T17:11:13.3374658Z Total Test time (real) =  21.65 sec
+2026-10-07T17:13:41.0675690Z [  PASSED  ] 8 tests.
+
+asan job
+2026-10-07T17:12:46.8620836Z 100% tests passed, 0 tests failed out of 75
+2026-10-07T17:12:46.8621409Z Total Test time (real) =  97.10 sec
+2026-10-07T17:15:15.4115605Z [  PASSED  ] 8 tests.
+
+tsan job
+2026-10-07T17:10:58.4756777Z 100% tests passed, 0 tests failed out of 20
+2026-10-07T17:10:58.4757365Z Total Test time (real) =   7.57 sec

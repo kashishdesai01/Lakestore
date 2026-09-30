@@ -1,0 +1,85 @@
+{
+  "backend": "in-memory",
+  "files": 16,
+  "hardware_threads": 8,
+  "rows": 16384,
+  "scans": [
+    {
+      "bytes_read": 273700,
+      "data_bytes_read": 262144,
+      "files_pruned": 0,
+      "files_read": 16,
+      "microseconds": 3949,
+      "parallelism": 1,
+      "prune": false,
+      "rows_returned": 1024
+    },
+    {
+      "bytes_read": 273700,
+      "data_bytes_read": 262144,
+      "files_pruned": 0,
+      "files_read": 16,
+      "microseconds": 1557,
+      "parallelism": 4,
+      "prune": false,
+      "rows_returned": 1024
+    },
+    {
+      "bytes_read": 21497,
+      "data_bytes_read": 16384,
+      "files_pruned": 15,
+      "files_read": 1,
+      "microseconds": 725,
+      "parallelism": 1,
+      "prune": true,
+      "rows_returned": 1024
+    },
+    {
+      "bytes_read": 21497,
+      "data_bytes_read": 16384,
+      "files_pruned": 15,
+      "files_read": 1,
+      "microseconds": 736,
+      "parallelism": 4,
+      "prune": true,
+      "rows_returned": 1024
+    }
+  ],
+  "startup": [
+    {
+      "checkpoint": true,
+      "microseconds": 296,
+      "store_calls": 11,
+      "version": 17
+    },
+    {
+      "checkpoint": false,
+      "microseconds": 328,
+      "store_calls": 19,
+      "version": 17
+    }
+  ],
+  "writers": [
+    {
+      "attempts": 11,
+      "commits": 10,
+      "conflicts": 0,
+      "microseconds": 2122,
+      "writers": 1
+    },
+    {
+      "attempts": 134,
+      "commits": 40,
+      "conflicts": 93,
+      "microseconds": 32023,
+      "writers": 4
+    },
+    {
+      "attempts": 1061,
+      "commits": 160,
+      "conflicts": 900,
+      "microseconds": 680266,
+      "writers": 16
+    }
+  ]
+}

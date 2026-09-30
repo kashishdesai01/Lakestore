@@ -1,0 +1,1 @@
+{"backend":"memory","crc":[{"bytes_processed":67108864,"checksum":46718364,"implementation":"bitwise-reference","microseconds":690079},{"bytes_processed":67108864,"checksum":46718364,"implementation":"production","microseconds":372797}],"hardware_threads":8,"mode":"crc","peak_rss_bytes":9846784}

@@ -1,0 +1,18 @@
+{
+  "provider": "s3",
+  "namespace": "lakestore-validation-4e126bfce5e64ff590b6d8028ada0550",
+  "prefix": "validation-4e126bfce5e64ff590b6d8028ada0550",
+  "started_utc": "2026-10-07T17:11:15.407187+00:00",
+  "checks": [
+    "append-and-ranged-scan",
+    "predicate-scan",
+    "zero-copy-clone-divergence",
+    "time-travel-and-restore",
+    "streaming-scan",
+    "durable-retention-and-offline-gc"
+  ],
+  "cleanup": true,
+  "status": "passed",
+  "finished_utc": "2026-10-07T17:12:46.246812+00:00",
+  "source_commit": "356ca503c4daca920ee5763a258a6bf31101ee8b"
+}
